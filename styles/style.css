@@ -101,6 +101,10 @@ body{
 
 .home-content p {
     font-size: 16px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+
 }
 
 .home-content h1 {
@@ -118,6 +122,11 @@ body{
 
     max-width: 650px;
     margin-right: -20px;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 2s;
+
+
 
 }
 
@@ -135,6 +144,9 @@ body{
     text-decoration: none;
     margin:30px 15px 30px 0;
     transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .social-media a:hover{
@@ -157,6 +169,9 @@ body{
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
 
 
 }
@@ -197,4 +212,32 @@ body{
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+@keyframes slideLeft{
+
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes zoomIn{
+
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
 }
