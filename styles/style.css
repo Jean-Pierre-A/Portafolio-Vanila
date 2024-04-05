@@ -99,7 +99,7 @@ body{
 
 .home-img img{
 
-    max-width: 450px;
+    max-width: 650px;
 
 }
 
@@ -111,9 +111,34 @@ body{
     height: 40px;
     background: transparent;
     border: 2px solid cyan;
-    border-radius: 30%;
+    border-radius: 50%;
     font-size: 20px;
     color: cyan;
     text-decoration: none;
     margin:30px 15px 30px 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover{
+
+    background: cyan;
+    color:#1f242d;
+    box-shadow: 0 0 20px cyan ;
+
+}
+
+.btn {
+
+    display: inline-block;
+    padding: 12px 28px;
+    background: cyan;
+    border-radius: 40px;
+    box-shadow: 0 0 10px cyan;
+    font-size: 16px;
+    color: #1f242d;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+
+
 }
